@@ -1,0 +1,271 @@
+body{
+   color: black;
+}
+
+.navbar{
+width: 100%;
+background: linear-gradient(to right, #323232 ,#000000);
+padding-bottom: 15px;
+display: flex; 
+align-items: center;
+justify-content: space-between;
+position: fixed;
+margin-top: 34px;
+z-index: 1;
+}
+
+.Titulo-nav{
+   font-size: 25px;
+   font-family: 'Fjalla One';
+   color: #fff;
+   font-weight: lighter;
+   margin-top: 18px;
+   margin-left: 40px;
+}
+
+.navbar-ul{
+   display: flex; 
+   justify-content: right;
+   
+}
+.li-navbar a{
+   text-decoration: none;
+   color: #fff;
+   transition: all 0.5s ease;
+   outline: 2px solid white;  
+   padding: 4px 9px;
+   border-radius: 12px;
+}
+.li-navbar{
+   list-style: none;
+   margin-right: 25px;
+   font-size: 21px;
+   font-family: 'Fjalla One';
+   color: #fff;
+   font-weight: lighter;
+   margin-top: 15px;
+   
+}
+.li-navbar a:hover{
+   padding: 5px 10px;
+   border-radius: 10px;
+   color: #55D5F0;
+   background: #fff;
+   color: #000;
+   text-decoration: underline;
+}
+
+.h1-presentation{
+   font-family: 'Contrail One', cursive;
+   font-size: 58px;
+   display: inline-block;
+   margin-top: 300px;
+   margin-left: 650px;
+   justify-content: center;
+   text-align: center;
+   animation-name: desplazar;
+   animation-duration: 1s;
+}
+
+@keyframes desplazar {
+   0%{
+      margin-top: 200px;
+   }
+   100%{
+      
+   }
+}
+
+.h2-presentation{
+   font-family: 'Merienda', cursive;
+   font-size: 25px;
+   margin-top: -25px;
+   display: flex;
+   margin-left: 260px;
+   text-align: center;
+   justify-content: center;
+   color: #DD2C2C;
+}
+
+.Img-cara{
+   width: 570px;
+   margin-top: -316px;
+   object-fit: cover;
+   display: flex;
+   margin-bottom: auto;
+   margin-right: auto;
+}
+
+#welcome-section{
+   background: linear-gradient(to right, #AAF0FF, #FCF98A);
+   width: 100%;
+   margin-top: -37px;
+   height: 661px;
+   outline: 12px solid black;
+}
+
+.Titulo-nav{
+   display: inline;
+}
+
+#projects{
+   background: linear-gradient(to right, #AAFFBB, #FFF2AA);
+   width: 100%;
+   margin-top: 22px;
+   height: 640px; 
+   outline: 12px solid black;   
+}
+
+.imgs{
+   width: 550px;
+   height: 430px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.imgs:hover{
+   width: 550px;
+   height: 450px;
+   Filter: blur(1px);
+   z-index: 2;
+}
+
+
+.titulo-projects{
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  margin-top: -5px; 
+  
+}
+
+.h1-projects{
+   font-family: 'Oswald', sans-serif;
+   font-size: 50px;
+   justify-content: center; 
+   text-align: center;
+   margin-top: 40px;
+   text-decoration: underline;
+   color: #171717;
+   animation-name: desplazar-derecha;
+   animation-duration: 3s;
+
+}
+
+@keyframes desplazar-derecha{
+   0%{
+     margin-left: -50px;
+   }
+   100%{
+    
+   }
+}
+
+.project-tile{
+   margin-top: 25px;
+   width: 500px;
+   height: 500px;
+   margin-left: 110px;
+   background-color: #2D2820;
+   outline: 1.5px solid black;
+   box-shadow: 2px 0 1px 1px black;
+}
+
+.project-tile2{
+   margin-top: 25px;
+   background: black;
+   width: 500px;
+   height: 500px;
+   margin-right: 110px;
+   background-color: #2D2820;
+   outline: 1.5px solid black;
+   box-shadow: 2px 0 1px 1px black;
+}
+
+.cajas-projects{
+   display: flex;
+   justify-content: space-between;
+}
+
+.descripcion-img{
+   color: white;
+   text-align: center;
+   font-size: 35px;
+   font-family: 'Rubik', sans-serif;
+}
+
+#contact{
+   color: #DFDFDF;
+   width: 100%;
+   background-color:black;
+   background-image:
+   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+   radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+   radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+   radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+   height: 690px;  
+}
+
+.h1-contact{
+   display: inline-block;
+   margin-top: 140px;
+   width: 102%;
+   text-align: center;
+   font-size: 80px;
+   font-family: 'Antonio', sans-serif;
+  
+}
+
+.h2-contact{
+   margin-top: 40px;
+   display: inline-block;
+   font-family: 'Ubuntu Mono', monospace;
+   width: 98%;
+   text-align: center;
+   font-size: 22px;
+}
+
+
+hr{
+   margin-top: 200px;
+}
+
+.p-contact{
+   margin-top: 20px;
+   display: flex;
+   font-family: 'Ubuntu Mono', monospace;
+   width: 100%;
+   text-align: center;
+   font-size: 20px;
+   justify-content: center;
+}
+
+.ul-contactos{
+   margin-top: 30px;
+   display: flex; 
+   justify-content: center;
+}
+
+.li-contactos{
+   justify-content: center;
+   list-style: none;
+   font-size: 21px;
+   font-family: 'Fjalla One';
+   color: #fff;
+   margin-top: 10px;
+   font-size: 30px;
+   margin-left: 20px;
+   margin-right: 40px;
+ 
+}
+
+.li-contactos a{
+   text-decoration: none;
+   color: #fff;
+}
+
+
+i{
+   margin-right: 10px;
+}
