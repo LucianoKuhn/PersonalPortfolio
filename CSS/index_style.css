@@ -1,196 +1,240 @@
-body{
-   color: black;
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar{
-width: 100%;
-background: linear-gradient(to right, #303030 ,#000000);
-padding-bottom: 15px;
-display: flex; 
-align-items: center;
-justify-content: space-between;
-position: fixed;
 
-z-index: 1;
+body {
+  color: black;
 }
 
-.Titulo-nav{
-   font-size: 30px;
-   font-family: 'Fjalla One';
-   color: #fff;
-   font-weight: lighter;
-   margin-top: 18px;
-   margin-left: 40px;
+
+.navbar {
+  background: linear-gradient(to right, #222222, #000000);
 }
 
-.navbar-ul{
-   display: flex; 
-   justify-content: right;
-   
-}
-.li-navbar a{
-   text-decoration: none;
-   color: #fff;
-   transition: all 0.5s ease;
-   outline: 2px solid white;  
-   padding: 4px 9px;
-   border-radius: 12px;
-}
-.li-navbar{
-   list-style: none;
-   margin-right: 25px;
-   font-size: 21px;
-   font-family: 'Fjalla One';
-   color: #fff;
-   font-weight: lighter;
-   margin-top: 15px;
-   
-}
-.li-navbar a:hover{
-   padding: 5px 10px;
-   border-radius: 10px;
-   color: #55D5F0;
-   background: #fff;
-   color: #000;
-   text-decoration: underline;
+.titulo-nav {
+  font-size: 30px;
+  font-family: "Fjalla One";
+  font-weight: lighter;
 }
 
-.h1-presentation{
-   font-family: 'Contrail One', cursive;
-   font-size: 60px;
-   margin-top: 170px;
-   animation-name: desplazar;
-   animation-duration: 1s;
+
+
+li {
+  list-style: none;
+  font-size: 21px;
+  font-family: "Fjalla One";
+  color: #fff;
+  font-weight: lighter;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 12px;
+}
+
+li a:hover {
+  color: rgb(0, 0, 0) !important;
+  background: #ffffff;
 }
 
 @keyframes desplazar {
-   0%{
-      margin-top: 200px;
-   }
-   100%{
-      
-   }
+  0% {
+    margin-top: 65px;
+  }
+  100% {
+  }
 }
 
-.h2-presentation{
-   font-family: "Urbanist", sans-serif;
-   font-size: 40px;
-   color: #DD2C2C;
-   margin-top: -20px;
+@keyframes desplazar-derecha {
+  0% {
+    margin-left: -250px;
+  }
+  100% {
+  }
 }
 
-.Img-cara{
-   width: 500px;
-   object-fit: cover;
-   animation-name: desplazar;
-   animation-duration: 1s;
+
+/*! SECCION BIENVENIDA */
+
+#welcome-section {
+  background: linear-gradient(to right,#44ddff, #fef852);
+  outline: 10px solid black;
+  box-shadow: 0px 25px 10px black;
 }
 
-#welcome-section{
-   background: linear-gradient(to right, #60bacf, #deda62);
-   outline: 12px solid black;
-  
+.p-name {
+  font-family: "Contrail One", cursive;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 200px;
+  animation-name: desplazar;
+  animation-duration: 1s;
+}
+.p-developer {
+  font-family: "Koh Santepheap", serif;
+  background-color: #000;
+  margin-top: -10px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
 }
 
-.Titulo-nav{
-   display: inline;
+.p-welcome {
+  font-family: "Fjalla One";
+  font-size: 50px;
+  color: #000000;
+  margin-top: -10px;
 }
 
-#projects{
-   background: linear-gradient(to right, #AAFFBB, #FFF2AA);
-   margin-top: 22px;
-   outline: 12px solid black;   
+.Img-cara {
+  margin-top:  5%;
+  object-fit: cover;
+  animation-name: desplazar;
+  animation-duration: 1s;
 }
 
-.imgs{
-   width: 550px;
-   height: 430px;
+
+
+
+/*! SECCION PROYECTOS */
+
+#projects {
+  background: linear-gradient(to right,#26aba7b8, #01a5a0fe);
+  padding-top: 100px;
+ 
+}
+
+.p-projectsTitulo {
+   font-family: "Contrail One", cursive;
+   font-size: 50px;
+   background-color: #000;
+   color: #ffffff;
+   animation-name: desplazar-derecha;
+   animation-duration: 4s;
+ }
+
+ .contenedorProyecto1 {
+   margin-top: 20px;
+   background-color: #202020;
+   outline: 4px solid rgb(255, 255, 255);
+   box-shadow: 0px 0px 10px black;
+   padding-bottom: 20px;
+  margin-bottom: 100px;
+ }
+
+.imgs {
+  width: 800px;
+  background-color: white;
+  height: 300px;
   object-fit: cover;
   transition: all 0.5s ease;
 }
-.imgs:hover{
-   width: 550px;
-   height: 450px;
-   Filter: blur(1px);
-   z-index: 2;
+.imgs:hover {
+  height: 330px;
+  filter: blur(1px);
+  z-index: 2;
 }
 
-
-.titulo-projects{
- padding-top: 5px;
-  height: 100px;
-  margin-top: -15px; 
-  margin-bottom: 50px;
+#projects p {
+  color: white;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
-.h1-projects{
-   font-family: 'Oswald', sans-serif;
-   font-size: 50px;
-   justify-content: center; 
-   text-align: center;
-   margin-top: 40px;
-   color: #171717;
-   animation-name: desplazar-derecha;
-   animation-duration: 3s;
-
+.pTituloProyecto {
+  font-size: 35px;
 }
 
-@keyframes desplazar-derecha{
-   0%{
-     margin-left: -50px;
-   }
-   100%{
-    
-   }
+.pDescProyecto{
+  font-size: 20px;
 }
 
-.project-tile{
-   margin-top: 25px;
-   width: 500px;
-   height: 500px;
-   background-color: #2D2820;
-   outline: 1.5px solid black;
-   box-shadow: 2px 0 1px 1px black;
+.pHerramientasProyecto {
+  font-size: 25px;
+}
+
+#projects i {
+  font-size: 55px;
 }
 
 
 
-.descripcion-img{
-   color: white;
-   text-align: center;
-   font-size: 35px;
-   font-family: 'Rubik', sans-serif;
+
+/*! SECCION CONTACTO */
+
+ #contactBackground {
+   box-shadow: 0px -2px 20px black;
+  color: #dfdfdf;
+  background-color: black;
+  height: 700px;
 }
 
-#contact{
-   height: 700px;
-   color: #DFDFDF;
-   background-color:black;
-   background-image:
-   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-   radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-   radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-   radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;  
+.p-letsWork {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 120px;
+  font-family: "Libre Barcode 128 Text", system-ui;
 }
 
-.h1-contact{
-   padding-top: 200px;
-   font-size: 60px;
-   font-family: 'Antonio', sans-serif;
+.containerRedes {
+  background-color: #000000;
+  border: 2px solid white;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 10px white;
+
 }
 
-#contact i {
-   color: white;
+.containerRedes:hover {
+  box-shadow: 0px 4px 15px white;
+}
+
+#contactBackground i {
+  color: white;
   font-size: 35px;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
-#contact a {
-text-decoration: none;
+
+#contactBackground i:hover {
+  color: rgb(14, 113, 235);
+  font-size: 50px;
+  transition: all 0.5s ease;
 }
 
+#contactBackground a {
+  text-decoration: none;
+}  
 
+@media only screen and (max-width: 768px) {
+  .p-name{
+    width: 350px;
+    font-size: 35px;
+    margin-top: 140px;
+  }
+  .p-developer {
+    width: 230px;
+    font-size: 20px;
+  }
+  
+  .p-welcome {
+    font-size: 35px;
 
+  }
+  .Img-cara {
+    margin-top:  6%;
+  }
+  .p-letsWork {
+    padding-top: 100px;
+    margin-bottom: 30px;
+    font-size: 100px;
+  }
+ 
+}
