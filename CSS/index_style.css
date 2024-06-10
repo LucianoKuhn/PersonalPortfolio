@@ -1,13 +1,10 @@
-
 .navbar {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
 body {
   color: black;
 }
-
 
 .navbar {
   background: linear-gradient(to right, #222222, #000000);
@@ -18,8 +15,6 @@ body {
   font-family: "Fjalla One";
   font-weight: lighter;
 }
-
-
 
 li {
   list-style: none;
@@ -42,7 +37,7 @@ li a:hover {
 
 @keyframes desplazar {
   0% {
-    margin-top: 65px;
+    margin-top: 100px;
   }
   100% {
   }
@@ -56,11 +51,10 @@ li a:hover {
   }
 }
 
-
 /*! SECCION BIENVENIDA */
 
 #welcome-section {
-  background: linear-gradient(to right,#44ddff, #fef852);
+  background: linear-gradient(to right, #44ddff, #fef852);
   outline: 10px solid black;
   box-shadow: 0px 25px 10px black;
 }
@@ -71,6 +65,7 @@ li a:hover {
   background-color: #000;
   text-align: center;
   font-size: 60px;
+  width: 590px;
   margin-top: 200px;
   animation-name: desplazar;
   animation-duration: 1s;
@@ -78,7 +73,8 @@ li a:hover {
 .p-developer {
   font-family: "Koh Santepheap", serif;
   background-color: #000;
-  margin-top: -10px;
+  margin-top: -12px;
+  width: 290px;
   text-align: center;
   color: white;
   font-size: 25px;
@@ -88,44 +84,40 @@ li a:hover {
   font-family: "Fjalla One";
   font-size: 50px;
   color: #000000;
-  margin-top: -10px;
+  margin-top: px;
 }
 
 .Img-cara {
-  margin-top:  5%;
+  margin-top: 5%;
   object-fit: cover;
-  animation-name: desplazar;
+  animation-name: desplazar-derecha;
   animation-duration: 1s;
 }
-
-
-
 
 /*! SECCION PROYECTOS */
 
 #projects {
-  background: linear-gradient(to right,#26aba7b8, #01a5a0fe);
+  background: linear-gradient(to right, #26aba7b8, #01a5a0fe);
   padding-top: 100px;
- 
 }
 
 .p-projectsTitulo {
-   font-family: "Contrail One", cursive;
-   font-size: 50px;
-   background-color: #000;
-   color: #ffffff;
-   animation-name: desplazar-derecha;
-   animation-duration: 4s;
- }
+  font-family: "Contrail One", cursive;
+  font-size: 50px;
+  background-color: #000;
+  color: #ffffff;
+  animation-name: desplazar-derecha;
+  animation-duration: 4s;
+}
 
- .contenedorProyecto1 {
-   margin-top: 20px;
-   background-color: #202020;
-   outline: 4px solid rgb(255, 255, 255);
-   box-shadow: 0px 0px 10px black;
-   padding-bottom: 20px;
-  margin-bottom: 100px;
- }
+.contenedorProyecto1 {
+  margin-top: 20px;
+  background-color: #202020;
+  outline: 5px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px black;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
 
 .imgs {
   width: 800px;
@@ -144,21 +136,19 @@ li a:hover {
   color: white;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
-
 }
 
 .pTituloProyecto {
   font-size: 40px;
   color: #02b7b1fe !important;
   padding-top: 10px;
-
 }
 
-.pDescProyecto{
+.pDescProyecto {
   font-size: 26px;
   border: 1px solid rgb(0, 0, 0);
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .pHerramientasProyecto {
@@ -170,13 +160,10 @@ li a:hover {
   font-size: 55px;
 }
 
-
-
-
 /*! SECCION CONTACTO */
 
- #contactBackground {
-   box-shadow: 0px -2px 20px black;
+#contactBackground {
+  box-shadow: 0px -2px 20px black;
   color: #dfdfdf;
   background-color: black;
   height: 700px;
@@ -196,7 +183,6 @@ li a:hover {
   padding-top: 25px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 10px white;
-
 }
 
 .containerRedes:hover {
@@ -219,10 +205,10 @@ li a:hover {
 
 #contactBackground a {
   text-decoration: none;
-}  
+}
 
 @media only screen and (max-width: 768px) {
-  .p-name{
+  .p-name {
     width: 350px;
     font-size: 35px;
     margin-top: 140px;
@@ -231,18 +217,16 @@ li a:hover {
     width: 230px;
     font-size: 20px;
   }
-  
+
   .p-welcome {
     font-size: 35px;
-
   }
   .Img-cara {
-    margin-top:  6%;
+    margin-top: -10px;
   }
   .p-letsWork {
     padding-top: 100px;
     margin-bottom: 30px;
     font-size: 100px;
   }
- 
 }
