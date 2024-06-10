@@ -143,19 +143,27 @@ li a:hover {
 #projects p {
   color: white;
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+
 }
 
 .pTituloProyecto {
-  font-size: 35px;
+  font-size: 40px;
+  color: #02b7b1fe !important;
+  padding-top: 10px;
+
 }
 
 .pDescProyecto{
-  font-size: 20px;
+  font-size: 26px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .pHerramientasProyecto {
-  font-size: 25px;
+  font-size: 28px;
+  text-decoration: underline;
 }
 
 #projects i {
@@ -192,19 +200,19 @@ li a:hover {
 }
 
 .containerRedes:hover {
-  box-shadow: 0px 4px 15px white;
+  box-shadow: 0px 4px 20px #02ded7fe;
 }
 
 #contactBackground i {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
 
 #contactBackground i:hover {
-  color: rgb(14, 113, 235);
+  color: #0abbb6fe;
   font-size: 50px;
   transition: all 0.5s ease;
 }
