@@ -112,6 +112,7 @@ li a:hover {
   background-color: #05a6a1;
   opacity: 1;
   padding-top: 100px;
+  border: 2px solid black;
 }
 .fondo{
   background: linear-gradient(to right, #01e0d9, #17d5d2);
@@ -130,6 +131,10 @@ li a:hover {
   object-fit: cover;
   animation-name: desplazar-derecha;
   animation-duration: 1s;
+}
+
+b{
+  color: rgb(0, 19, 84); 
 }
 
 /*! SECCION PROYECTOS */
@@ -277,7 +282,7 @@ li a:hover {
     font-size: 21px;
   }
   .p-description{
-    font-size: 25px;
+    font-size: 22px;
   }
 
 }
