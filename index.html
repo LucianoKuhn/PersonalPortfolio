@@ -86,6 +86,15 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("wj7j8Snzex3CeXUly");
+    </script>
   </head>
   <body>
     <header>
@@ -163,17 +172,14 @@
       <div class="container fondo mt-2">
         <div class="row mb-3">
           <div class="col-12 order-2 col-md-5 col-lg-7">
-            
-              <p class="p-description">
-                Mi nombre es <b>Luciano Agustín Kuhn</b>, soy <b>Argentino</b> y
-                actualmente vivo en Concepción del Uruguay por estudios. Me
-                estoy iniciando como
-                <b>programador web enfocado al Front-End</b>.
-                <br />
-                Por el momento me encuentro aprendiendo el framework
-                <b>Angular</b>.
-              </p>
-           
+            <p class="p-description">
+              Mi nombre es <b>Luciano Agustín Kuhn</b>, soy <b>Argentino</b> y
+              actualmente vivo en Concepción del Uruguay por estudios. Me estoy
+              iniciando como <b>programador web enfocado al Front-End</b>.
+              <br />
+              Por el momento me encuentro aprendiendo el framework
+              <b>Angular</b>.
+            </p>
           </div>
           <div class="col-12 order-2 col-md-5 col-lg-5">
             <img
@@ -184,37 +190,26 @@
           </div>
         </div>
         <div class="herramientasCont container-fluid">
-          <p class="h1 p-herramientas text-center mb-3">Herramientas que utilizo:</p>
+          <p class="h1 p-herramientas text-center mb-3">
+            Herramientas que utilizo:
+          </p>
           <div class="row">
             <div class="col-6">
               <img src="img/logos herramientas/html2.png" alt="html" />
 
               <img src="img/logos herramientas/js.png" alt="javascript" />
-              <img
-                src="img/logos herramientas/bootstrap.png"
-                alt="bootstrap"
-              />
-              <img
-                src="img/logos herramientas/photoshop.png"
-                alt="photoshop"
-              />
+              <img src="img/logos herramientas/bootstrap.png" alt="bootstrap" />
+              <img src="img/logos herramientas/photoshop.png" alt="photoshop" />
             </div>
             <div class="col-6">
               <img src="img/logos herramientas/css.png" alt="css" />
-              <img
-                src="img/logos herramientas/angular.png"
-                alt="angular"
-              />
-              <img
-                src="img/logos herramientas/firebase.png"
-                alt="firebase"
-              />
+              <img src="img/logos herramientas/angular.png" alt="angular" />
+              <img src="img/logos herramientas/firebase.png" alt="firebase" />
               <img src="img/logos herramientas/git.png" alt="git" />
             </div>
           </div>
         </div>
       </div>
-      
     </div>
 
     <!--! PROJECTS  SECTION -->
@@ -262,6 +257,56 @@
     <div id="contactBackground">
       <p class="p-letsWork text-center">Trabajemos Juntos</p>
       <div class="container">
+        <div class="form-contacto">
+          <form id="form" class="text-dark">
+            <div class="form-floating field" style="margin-bottom: 20px">
+              <input
+                type="text"
+                name="from_name"
+                class="form-control"
+                id="from_name"
+                placeholder="name"
+                required
+              />
+              <label for="floatingPassword">Ingresa tu nombre</label>
+            </div>
+
+            <div class="form-floating field" style="margin-bottom: 20px">
+              <textarea
+                class="form-control"
+                placeholder="Dejame un comentario"
+                name="message"
+                id="message"
+                style="resize: none; height: 100px"
+                required
+              ></textarea>
+
+              <label for="floatingTextarea">Dejame un comentario</label>
+            </div>
+
+            <div class="form-floating mb-3 field">
+              <input
+                type="email"
+                name="reply_to"
+                class="form-control"
+                id="reply_to"
+                placeholder="Ingresa tu email"
+                required
+              />
+              <label for="floatingInput">Ingresa tu email</label>
+            </div>
+            <div class="d-grid gap-2">
+              <input
+                type="submit"
+                id="button"
+                class="btn btn-primary"
+                value="Enviar"
+              />
+            </div>
+          </form>
+          <script src="JS/indexJS.js"></script>
+        </div>
+
         <div class="containerRedes">
           <div class="row">
             <div class="col-4">
@@ -289,7 +334,5 @@
         </div>
       </div>
     </div>
-
-    <script src="JS/indexJS.js"></script>
   </body>
 </html>
